@@ -1,7 +1,7 @@
 function[xf]=simplex(A, c, b, max, mode)
 % Funcion que realiza el metodo simplex
 if max
-    %Si se pide el maximo (Numeral c)
+    %Si se pide el maximo 
     c = -c;
 end
 
@@ -18,9 +18,9 @@ xf = [];
 
 z=baseNoArt(Ib, xa);
 
-% Modo silent (Numeral d)
+% Modo silent 
 if mode == false
-    % Realizamos el metoso de dos fases: (Numeral b)
+    % Realizamos el metoso de dos fases: 
     % Fase 1
     while z ~= 0
         if det(B)==0
@@ -156,9 +156,9 @@ if mode == false
     end
 
 
-% Modo verbose (Numeral d)
+% Modo verbose 
 elseif mode == true
-    % Realizamos el metoso de dos fases: (Numeral b)
+    % Realizamos el metoso de dos fases: 
     % Fase 1
     
     disp('Indice de las variables básicas: ')
